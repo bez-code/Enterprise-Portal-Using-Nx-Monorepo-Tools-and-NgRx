@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
-import { VisitorComponent } from './visitor.component';
+import { AdminComponent } from './admin.component';
 
 
 @NgModule({
@@ -19,11 +19,11 @@ import { VisitorComponent } from './visitor.component';
     MatIconModule,
     MatListModule,
     RouterModule.forChild([
-      { path: '', component: VisitorComponent }
+      { path: '', component: AdminComponent }
     ]),
     MatCardModule
   ],
   declarations: [
   ],
 })
-export class VisitorModule { }
+export class AdminModule { }

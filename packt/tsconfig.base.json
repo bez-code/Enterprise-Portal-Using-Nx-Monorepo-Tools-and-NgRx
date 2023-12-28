@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@packt/admin": ["admin/src/index.ts"],
       "@packt/visitor": ["visitor/src/index.ts"]
     }
   },

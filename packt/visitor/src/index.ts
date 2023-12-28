@@ -1,1 +1,1 @@
-export * from './lib/visitor/visitor.component';
+export * from './lib/visitor/visitor.module';
