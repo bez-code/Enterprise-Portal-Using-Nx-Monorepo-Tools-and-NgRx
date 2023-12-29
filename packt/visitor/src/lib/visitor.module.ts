@@ -8,6 +8,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { VisitorComponent } from './visitor.component';
+import { PoiModule } from '../../../poi/src/lib/poi/poi.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { VisitorComponent } from './visitor.component';
     RouterModule.forChild([
       { path: '', component: VisitorComponent }
     ]),
-    MatCardModule
+    MatCardModule,
+    PoiModule
   ],
   declarations: [
   ],

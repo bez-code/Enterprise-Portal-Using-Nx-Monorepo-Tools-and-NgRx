@@ -13,4 +13,4 @@ import { PoiEffects } from './+state/poi.effects';
   ],
   declarations: [],
 })
-export class AppModule {}
+export class PoiModule {}
