@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'packt-visitor',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './visitor.component.html',
   styleUrl: './visitor.component.css',
 })
-export class VisitorComponent {}
+
+export class VisitorComponent {
+  isHandset$!: Observable<boolean>;
+}

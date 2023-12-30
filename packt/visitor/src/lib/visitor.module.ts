@@ -9,9 +9,15 @@ import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { VisitorComponent } from './visitor.component';
 import { PoiModule } from '../../../poi/src/lib/poi/poi.module';
+import { PoiListComponent } from './poi-list/poi-list.component';
+import { ReducerManager } from '@ngrx/store';
 
 
 @NgModule({
+  declarations: [
+    VisitorComponent,
+    PoiListComponent
+  ],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -25,7 +31,8 @@ import { PoiModule } from '../../../poi/src/lib/poi/poi.module';
     MatCardModule,
     PoiModule
   ],
-  declarations: [
+  providers: [
+    ReducerManager, // Add other providers if needed
   ],
 })
 export class VisitorModule { }
