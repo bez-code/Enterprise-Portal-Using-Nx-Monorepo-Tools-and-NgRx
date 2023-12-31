@@ -31,6 +31,7 @@ import { appRoutes } from './app.routes';
     EffectsModule.forRoot(),
     StoreRouterConnectingModule.forRoot(),
   ],
-  declarations: [ NxWelcomeComponent],
+  declarations: [ AppComponent, NxWelcomeComponent],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

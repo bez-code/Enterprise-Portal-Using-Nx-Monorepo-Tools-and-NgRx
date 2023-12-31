@@ -11,15 +11,19 @@ import { VisitorComponent } from './visitor.component';
 import { PoiModule } from '../../../poi/src/lib/poi/poi.module';
 import { PoiListComponent } from './poi-list/poi-list.component';
 import { ReducerManager } from '@ngrx/store';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
   declarations: [
     VisitorComponent,
-    PoiListComponent
+    PoiListComponent,
+    MapComponent,
   ],
   imports: [
     CommonModule,
+    GoogleMapsModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
