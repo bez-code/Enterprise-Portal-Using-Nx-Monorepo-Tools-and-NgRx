@@ -33,7 +33,8 @@ import { MapComponent } from './map/map.component';
       { path: '', component: VisitorComponent }
     ]),
     MatCardModule,
-    PoiModule
+    PoiModule,
+    MatCardModule
   ],
   providers: [
     ReducerManager, // Add other providers if needed

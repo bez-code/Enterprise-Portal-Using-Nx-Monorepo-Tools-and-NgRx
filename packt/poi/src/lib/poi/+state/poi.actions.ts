@@ -12,3 +12,19 @@ export const loadPoiFailure = createAction(
   '[Poi/API] Load Poi Failure',
   props<{ error: any }>()
 );
+
+export const selectPoi = createAction(
+  '[Poi/API] Select Poi',
+  props<{ poiId: string | number }>()
+)
+
+export const visitPoi = createAction(
+  '[Poi/API] Visit Poi',
+  props<{ poiId: string | number }>()
+)
+
+export const visitPoiSuccess = createAction('[Poi/API] Visit PoiSuccess');
+  export const visitPoiFailure = createAction(
+  '[Poi/API] Visit Poi Failure',
+  props<{ error: any }>()
+);
